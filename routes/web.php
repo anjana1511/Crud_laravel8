@@ -20,3 +20,7 @@ Route::get('/', function () {
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('products', ProductController::class);
 
+
+use App\Http\Controllers\BlogController;
+Route::resource('blogs', BlogController::class);
+
